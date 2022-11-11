@@ -1,0 +1,195 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-11T01:00:50.856Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14611403000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Signup with valid data",
+        "description": "",
+        "id": "create-new-account;signup-with-valid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 1319000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 71314000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "i am on best buy Home page",
+            "match": {
+              "location": "stepDef.signup_stepDef.iAmOnBestBuyHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 134999000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i click on Account",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4082607000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i click on create account",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnCreateAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298389000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i enter first name",
+            "match": {
+              "location": "stepDef.signup_stepDef.iEnterFirstName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 546900000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter last name",
+            "match": {
+              "location": "stepDef.signup_stepDef.iEnterLastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170696000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter valid email",
+            "match": {
+              "location": "stepDef.signup_stepDef.iEnterValidEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238513000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i enter password",
+            "match": {
+              "location": "stepDef.signup_stepDef.iEnterPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 267000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i enter confirm password",
+            "match": {
+              "location": "stepDef.signup_stepDef.iEnterConfirmPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128577000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i enter valid phone number",
+            "match": {
+              "location": "stepDef.signup_stepDef.iEnterValidPhoneNumber()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105453000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on check box",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnCheckBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89212000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i click on create on account button",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnCreateOnAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 172000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i should be albe to signup successfully",
+            "match": {
+              "location": "stepDef.signup_stepDef.iShouldBeAlbeToSignupSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Create new account",
+    "description": "",
+    "id": "create-new-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/signup.feature",
+    "tags": []
+  }
+]
