@@ -10,6 +10,9 @@ import org.testng.util.Strings;
 
 public class Hook extends Config {
  public static String url;
+ public static String email;
+ public static String password;
+
  public static   String driverType= System.getProperty("browser");
  public static String envType= System.getProperty("env");
  @Before
@@ -27,7 +30,9 @@ switch (envType){
 
  case "qa":
   url = "https://www.bestbuy.com/";
-
+  //url="https://www.bestbuy.com/identity/signin";
+  email= "juliaferduse7@gmail.com";
+  password= "bestbuyjara123$";
   break;
 }
 driver.get(url);

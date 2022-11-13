@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                12,
-                0,
-                0,
+                7,
+                1,
+                13,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 21) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                0
+                0,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>GroupStudy</td>
                           <td>1</td>
-                        <td>10 Nov 2022, 20:01</td>
+                        <td>12 Nov 2022, 19:43</td>
           </tr>
         </tbody>
       </table>
@@ -323,50 +323,50 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="file-src-test-java-features-signup-feature.html">Create new account</a></td>
+        <td class="tagname"><a href="file-src-test-java-features-product_search-feature.html">ProductSearch</a></td>
         
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >12</td>
+        <td      class="passed"    >7</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >13</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-        <td class="duration" data-value="5867099000">5s 867ms</td>
-        <td class="passed">Passed</td>
+        <td class="total">21</td>
+        <td class="duration" data-value="36776211000">36s 776ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td>1</td>
-            <td>1</td>
-      <td>0</td>
+            <td>0</td>
       <td>1</td>
-      <td>12</td>
+      <td>1</td>
+      <td>7</td>
+      <td>1</td>
+      <td>13</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-      <td class="duration">5s 867ms</td>
+      <td>21</td>
+      <td class="duration">36s 776ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>0.00%</td>
+      <td>100.00%</td>
+      <td></td>
+      <td>33.33%</td>
+      <td>4.76%</td>
+      <td>61.90%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
       <td></td>
       <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

@@ -1,5 +1,11 @@
+stepDef/login_stepDef.class
+pageObject/product_page.class
 stepDef/Hook.class
 stepDef/signup_stepDef.class
 pageObject/signin_page.class
+pageObject/login_page.class
+stepDef/all_links.class
+stepDef/product_stepDef.class
 base/Config.class
 TestRunner.class
+pageObject/link_page.class

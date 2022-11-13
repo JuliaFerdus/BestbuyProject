@@ -1,36 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-10T20:00:50 EST" name="Surefire suite" finished-at="2022-11-10T20:01:11 EST" duration-ms="20902">
+  <suite started-at="2022-11-12T19:42:40 EST" name="Surefire suite" finished-at="2022-11-12T19:43:38 EST" duration-ms="57240">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@12405818]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-10T20:00:50 EST" name="Surefire test" finished-at="2022-11-10T20:01:11 EST" duration-ms="20902">
+    <test started-at="2022-11-12T19:42:40 EST" name="Surefire test" finished-at="2022-11-12T19:43:38 EST" duration-ms="57240">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@12405818]" started-at="2022-11-10T20:00:50 EST" name="setUpClass" finished-at="2022-11-10T20:00:50 EST" duration-ms="227" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@12405818]" started-at="2022-11-12T19:42:40 EST" name="setUpClass" finished-at="2022-11-12T19:42:41 EST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@12405818]" started-at="2022-11-10T20:00:50 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-10T20:01:11 EST" duration-ms="20588" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@12405818]" started-at="2022-11-12T19:42:41 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-12T19:43:37 EST" duration-ms="56320" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Signup with valid data"]]>
+                <![CDATA["User can search a mac laptop and order or purchase"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Create new account]"]]>
+                <![CDATA["Optional[ProductSearch]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button class="btn btn-lg btn-block btn-primary" type="button" data-track="... - Top">Checkout</button> is not clickable at point (1451, 419). Other element would receive the click: <div class="page-spinner page-spinner--in">...</div>
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Users-MacBook-Pro.local', ip: '2601:47:4301:b90:1df8:897:57d3:278e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc7b7c2e1a11452447efae4529502217, clickElement {id=5865e6e3-1529-40cc-b7a4-8e48c8a3a947}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/f2/r3d_xznx73d...}, goog:chromeOptions: {debuggerAddress: localhost:50786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50786/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (fc7b7c2e1a11452447efae4529502217)] -> xpath: /html/body/div[1]/main/div/div[2]/div[1]/div/div[2]/div[1]/section[2]/div/div/div[4]/div[1]/div/button]
+Session ID: fc7b7c2e1a11452447efae4529502217]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-lg btn-block btn-primary" type="button" data-track="... - Top">Checkout</button> is not clickable at point (1451, 419). Other element would receive the click: <div class="page-spinner page-spinner--in">...</div>
+  (Session info: chrome=107.0.5304.110)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Users-MacBook-Pro.local', ip: '2601:47:4301:b90:1df8:897:57d3:278e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc7b7c2e1a11452447efae4529502217, clickElement {id=5865e6e3-1529-40cc-b7a4-8e48c8a3a947}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/f2/r3d_xznx73d...}, goog:chromeOptions: {debuggerAddress: localhost:50786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50786/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (fc7b7c2e1a11452447efae4529502217)] -> xpath: /html/body/div[1]/main/div/div[2]/div[1]/div/div[2]/div[1]/section[2]/div/div/div[4]/div[1]/div/button]
+Session ID: fc7b7c2e1a11452447efae4529502217
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at pageObject.product_page.verifyCheckOut(product_page.java:79)
+at stepDef.product_stepDef.iClickOnCheckoutButton(product_stepDef.java:51)
+at ✽.i click on checkout button(file:///Users/user/Documents/GitHub/BestbuyProject/src/test/java/features/product_search.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@12405818]" started-at="2022-11-10T20:01:11 EST" name="tearDownClass" finished-at="2022-11-10T20:01:11 EST" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@12405818]" started-at="2022-11-12T19:43:37 EST" name="tearDownClass" finished-at="2022-11-12T19:43:38 EST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

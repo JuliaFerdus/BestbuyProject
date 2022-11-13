@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObject.signin_page;
 
-import java.util.Locale;
+
 
 public class signup_stepDef extends Config {
 
@@ -87,7 +87,7 @@ public class signup_stepDef extends Config {
         SP.createNewAccount();
     }
 
-    @Then("i should be albe to signup successfully")
+    @Then("i should be able to signup successfully")
     public void iShouldBeAlbeToSignupSuccessfully() {
     }
 
