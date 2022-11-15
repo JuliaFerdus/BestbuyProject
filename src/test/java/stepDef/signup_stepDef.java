@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pageObject.login_page;
 import pageObject.signin_page;
 
 
@@ -13,21 +14,30 @@ import pageObject.signin_page;
 public class signup_stepDef extends Config {
 
     signin_page SP = new signin_page(driver);
+    login_page sl = new login_page(driver);
+
     Faker fake = new Faker();
     @Given("i am on best buy Home page")
     public void iAmOnBestBuyHomePage() {
         SP.verifyHomePageTitle();
+        sl.verifyPageTitle();
+
 
     }
 
     @And("i click on Account")
     public void iClickOnAccount() {
-        SP.accountForSignin();
+        SP.accountForSignup();
+
+
+
+
     }
 
     @And("i click on create account")
     public void iClickOnCreateAccount() {
         SP.createAccount();
+
     }
 
     @Then("i am on the create an account page")

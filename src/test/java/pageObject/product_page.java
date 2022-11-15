@@ -33,7 +33,7 @@ public class product_page extends Config {
     @FindBy(how = How.XPATH, using = "//div[@data-sku-id='6509650']/a[1]/img[1]")
     public WebElement laptopLocator;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[4]/main/div[3]/div/div[1]/div[3]/div[2]/div/div[2]/div[2]/div/div/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//button[@data-button-state='ADD_TO_CART']")
     public WebElement addToCartLocator;
 
 
@@ -41,24 +41,31 @@ public class product_page extends Config {
     public WebElement goToCartLocator;
 
 
-    @FindBy(how = How.XPATH, using = "//button[@class='c-button c-button-primary c-button-md btn-lg']")
+    @FindBy(how = How.XPATH, using = "//html/body/div[1]/main/div/div[2]/div[1]/div/div[4]/div[1]/div/div/div/div/button")
     public WebElement cancelPopupLocator;
 
 
+    @FindBy(how=How.XPATH, using = "//button[@data-track='Checkout - Top']")
+    public WebElement checktOutLocator;
 
+    @FindBy(how = How.CSS,using = "button[class='c-button c-button-secondary c-button-lg cia-guest-content__continue guest']")
+    public WebElement continueAsGuest;
 
-@FindBy(how=How.XPATH, using = "/html/body/div[1]/main/div/div[2]/div[1]/div/div[2]/div[1]/section[2]/div/div/div[4]/div[1]/div/button")
-public WebElement checktOutLocator;
+    @FindBy(how = How.CSS,using = "input[id='user.emailAddress']")
+    public WebElement contractInformationLocator;
+
+    @FindBy(how = How.CSS, using = "input[id='user.phone']")
+    public WebElement phoneNumberLocator;
+
+    @FindBy(how = How.XPATH,using = "//div[@class='button--continue']/button/span")
+    public WebElement continueTopaymentlocator;
 
 
     public void searchIcon() {
         searchLocator.sendKeys("mac laptop");
     }
 
-    public void submitButton() {
-        submitLocator.click();
-
-    }
+    public void submitButton() { submitLocator.click();}
 
     public void findLaptop() {
         laptopLocator.click();
@@ -75,8 +82,20 @@ public WebElement checktOutLocator;
     public void verifyPopupCancel() {
         cancelPopupLocator.click();
     }
+
     public void verifyCheckOut()  {
         checktOutLocator.click();
+    }
+
+    public void clickOnContinueGuestButton(){ continueAsGuest.click(); }
+
+    public void clickOnContractInformationButton(){ contractInformationLocator.sendKeys("juliaferduse7@gmail.com"); }
+
+    public void clickOnPhoneNumberButton(){
+        phoneNumberLocator.sendKeys("9295337556");
+    }
+    public void clickOnContinuePaymentButton(){
+        continueTopaymentlocator.click();
     }
 
 }

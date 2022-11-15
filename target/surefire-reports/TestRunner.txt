@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.703 s <<< FAILURE! - in TestRunner
-TestRunner.runScenario["User can search a mac laptop and order or purchase", "Optional[ProductSearch]"](1)  Time elapsed: 56.345 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button class="btn btn-lg btn-block btn-primary" type="button" data-track="... - Top">Checkout</button> is not clickable at point (1451, 419). Other element would receive the click: <div class="page-spinner page-spinner--in">...</div>
-  (Session info: chrome=107.0.5304.110)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'Users-MacBook-Pro.local', ip: '2601:47:4301:b90:1df8:897:57d3:278e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc7b7c2e1a11452447efae4529502217, clickElement {id=5865e6e3-1529-40cc-b7a4-8e48c8a3a947}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/f2/r3d_xznx73d...}, goog:chromeOptions: {debuggerAddress: localhost:50786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50786/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (fc7b7c2e1a11452447efae4529502217)] -> xpath: /html/body/div[1]/main/div/div[2]/div[1]/div/div[2]/div[1]/section[2]/div/div/div[4]/div[1]/div/button]
-Session ID: fc7b7c2e1a11452447efae4529502217
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.374 s - in TestRunner

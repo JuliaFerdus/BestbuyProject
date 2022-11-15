@@ -53,18 +53,22 @@ public class product_stepDef extends Config {
 
     @And("i click on continue as guest")
     public void iClickOnContinueAsGuest() {
+        pp.clickOnContinueGuestButton();
     }
 
     @And("i enter valid email address")
     public void iEnterValidEmailAddress() {
+        pp.clickOnContractInformationButton();
     }
 
     @And("i enter valid phone number for order")
     public void iEnterValidPhoneNumberForOrder() {
+        pp.clickOnPhoneNumberButton();
     }
 
     @When("i click on continue to payment information button")
     public void iClickOnContinueToPaymentInformationButton() {
+        pp.clickOnContinuePaymentButton();
     }
 
     @Then("i should land on payment information page")

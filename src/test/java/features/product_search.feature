@@ -25,12 +25,3 @@ Feature: ProductSearch
     And i enter state  name
     And i enter zipcode
     When i click place your order button
-
-
-
-
-
-
-    Scenario:Search smart watch
-      And i enter smart watch on search box
-      And i click on search icon

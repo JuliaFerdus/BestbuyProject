@@ -26,16 +26,15 @@ public class link_page extends Config {
         System.out.println("i am on bestbuy home page");
     }
 
-    @FindBy(how = How.ID, using = "section-1")
-    public WebElement orderAndpurechasesLocator;
+
 
 
     //Function
     public void verificationOfallLinks() {
      WebElement ulbody = driver.findElement(By.id("section-1"));
-     int link =ulbody.findElements(By.cssSelector("a")).size();
-     System.out.println(link);
-     for(int i =0; i<link;i++){
+        List<WebElement> link = ulbody.findElements(By.cssSelector("a"));
+     System.out.println(link.size());
+     for(int i =0; i< link.size();i++){
          WebElement linkTex= driver.findElement(By.id("section-1"));
          List<WebElement> links =linkTex.findElements(By.cssSelector("a"));
          String printlinkText= links.get(i).getText();

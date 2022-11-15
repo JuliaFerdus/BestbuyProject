@@ -51,7 +51,7 @@ public WebElement createAnAccount;
 
 
     //function
-    public void accountForSignin(){
+    public void accountForSignup(){
         accountLocator.click();
     }
     public void createAccount() {
@@ -69,9 +69,9 @@ public WebElement createAnAccount;
         emailLocator.sendKeys(email);
 
     }
-    public String enterPassword(String passw) {
+    public void enterPassword(String passw) {
         passwordLocator.sendKeys(passw);
-        return passw;
+
     }
     public void enterComfpassword(String comfpassw){
         comfirmPasswordLocator.sendKeys(comfpassw);

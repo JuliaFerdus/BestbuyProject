@@ -30,9 +30,8 @@ switch (envType){
 
  case "qa":
   url = "https://www.bestbuy.com/";
-  //url="https://www.bestbuy.com/identity/signin";
   email= "juliaferduse7@gmail.com";
-  password= "bestbuyjara123$";
+  password= "bestbuyjara123$1";
   break;
 }
 driver.get(url);
