@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 2,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,24 +11,24 @@
         "steps": [
           {
             "result": {
-              "duration": 89916000,
+              "duration": 9116000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "i am on best buy home page searching for product",
+            "line": 3,
+            "name": "i am in best buy Home page",
             "match": {
-              "location": "stepDef.product_stepDef.iAmOnBestBuyHomePageSearchingForProduct()"
+              "location": "stepDef.all_links.iAmInBestBuyHomePage()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2022-11-15T22:59:06.055Z",
+        "start_timestamp": "2022-11-16T17:45:49.649Z",
         "before": [
           {
             "result": {
-              "duration": 13129415000,
+              "duration": 14038929000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "User can search a mac laptop and order or purchase",
+        "line": 5,
+        "name": "Signup with valid data",
         "description": "",
-        "id": "productsearch;user-can-search-a-mac-laptop-and-order-or-purchase",
+        "id": "create-new-account;signup-with-valid-data",
         "after": [
           {
             "result": {
-              "duration": 1852000,
+              "duration": 1233000,
               "status": "passed"
             },
             "match": {
@@ -56,257 +56,149 @@
         "steps": [
           {
             "result": {
-              "duration": 256057000,
+              "duration": 362071000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i click on Account",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4095748000,
               "status": "passed"
             },
             "line": 8,
-            "name": "i enter mac laptop on search box",
+            "name": "i click on create account",
             "match": {
-              "location": "stepDef.product_stepDef.iEnterMaclaptopOnSearchBox()"
+              "location": "stepDef.signup_stepDef.iClickOnCreateAccount()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5340818000,
+              "duration": 276210000,
               "status": "passed"
             },
             "line": 9,
-            "name": "i click on search icon",
+            "name": "i enter first name",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnSearchIcon()"
+              "location": "stepDef.signup_stepDef.iEnterFirstName()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6729963000,
+              "duration": 83449000,
               "status": "passed"
             },
             "line": 10,
-            "name": "i click on the first mac laptop link",
+            "name": "i enter last name",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnTheFirstMacLaptopLink()"
+              "location": "stepDef.signup_stepDef.iEnterLastName()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 202461000,
+              "duration": 588900000,
               "status": "passed"
             },
             "line": 11,
-            "name": "i click on add to cart button",
+            "name": "i enter valid email",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnAddToCartButton()"
+              "location": "stepDef.signup_stepDef.iEnterValidEmail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4481262000,
+              "duration": 268199000,
               "status": "passed"
             },
             "line": 12,
-            "name": "from the pop up window i click go to cart button",
+            "name": "i enter password",
             "match": {
-              "location": "stepDef.product_stepDef.fromThePopUpWindowIClickGoToCartButton()"
+              "location": "stepDef.signup_stepDef.iEnterPassword()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 875877000,
+              "duration": 242000,
               "status": "passed"
             },
             "line": 13,
-            "name": "cancel the next pop up window",
+            "name": "i enter confirm password",
             "match": {
-              "location": "stepDef.product_stepDef.cancelTheNextPopUpWindow()"
+              "location": "stepDef.signup_stepDef.iEnterConfirmPassword()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 804141000,
+              "duration": 149291000,
               "status": "passed"
             },
             "line": 14,
-            "name": "i click on checkout button",
+            "name": "i enter valid phone number",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnCheckoutButton()"
+              "location": "stepDef.signup_stepDef.iEnterValidPhoneNumber()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4216588000,
+              "duration": 107117000,
               "status": "passed"
             },
             "line": 15,
-            "name": "i click on continue as guest",
+            "name": "i click on check box",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnContinueAsGuest()"
+              "location": "stepDef.signup_stepDef.iClickOnCheckBox()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4669926000,
+              "duration": 96602000,
               "status": "passed"
             },
             "line": 16,
-            "name": "i enter valid email address",
+            "name": "i click on create on account button",
             "match": {
-              "location": "stepDef.product_stepDef.iEnterValidEmailAddress()"
+              "location": "stepDef.signup_stepDef.iClickOnCreateOnAccountButton()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 678831000,
+              "duration": 161000,
               "status": "passed"
             },
             "line": 17,
-            "name": "i enter valid phone number for order",
+            "name": "i should be able to signup successfully",
             "match": {
-              "location": "stepDef.product_stepDef.iEnterValidPhoneNumberForOrder()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 141937000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "i click on continue to payment information button",
-            "match": {
-              "location": "stepDef.product_stepDef.iClickOnContinueToPaymentInformationButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 165000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "i should land on payment information page",
-            "match": {
-              "location": "stepDef.product_stepDef.iShouldLandOnPaymentInformationPage()"
+              "location": "stepDef.signup_stepDef.iShouldBeAlbeToSignupSuccessfully()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 66000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "i enter valid credit card number",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterValidCreditCardNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 64000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "i enter valid first name",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterValidFirstName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 56000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "i enter valid last name",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterValidLastName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 110000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "i enter valid email in email field",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterValidEmailInEmailField()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 97000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "i enter city  name",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterCityName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "i enter state  name",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterStateName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "i enter zipcode",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterZipcode()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 52000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "i click place your order button",
-            "match": {
-              "location": "stepDef.product_stepDef.iClickPlaceYourOrderButton()"
-            },
-            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@E2ETest"
+            "name": "@Test5"
           }
         ]
       }
     ],
-    "name": "ProductSearch",
+    "name": "Create new account",
     "description": "",
-    "id": "productsearch",
+    "id": "create-new-account",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/product_search.feature",
+    "uri": "file:src/test/java/features/signup.feature",
     "tags": []
   }
 ]

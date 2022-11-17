@@ -2,6 +2,7 @@ package pageObject;
 
 import base.Config;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -27,6 +28,7 @@ public class product_page extends Config {
 
     @FindBy(how = How.ID, using = "gh-search-input")
     public WebElement searchLocator;
+
     @FindBy(how = How.CSS, using = "button[title='submit search']")
     public WebElement submitLocator;
 
@@ -60,6 +62,9 @@ public class product_page extends Config {
     @FindBy(how = How.XPATH,using = "//div[@class='button--continue']/button/span")
     public WebElement continueTopaymentlocator;
 
+    @FindBy(how = How.XPATH,using = "//input[@name='number']")
+    public WebElement paymentLocator;
+
 
     public void searchIcon() {
         searchLocator.sendKeys("mac laptop");
@@ -71,9 +76,15 @@ public class product_page extends Config {
         laptopLocator.click();
     }
 
-    public void VerifyClickAdd() {
-        addToCartLocator.click();
+    public void VerifyClickAdd() throws InterruptedException {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+     WebElement clickADD = driver.findElement(By.xpath("//button[@class='c-button c-button-primary c-button-lg c-button-block c-button-icon c-button-icon-leading add-to-cart-button']"));
+     js.executeScript("arguments[0].scrollIntoView()",clickADD);
+     Thread.sleep(3000);
+     addToCartLocator.click();
     }
+
 
     public void verifyGoToCart() {
         goToCartLocator.click();
@@ -94,8 +105,13 @@ public class product_page extends Config {
     public void clickOnPhoneNumberButton(){
         phoneNumberLocator.sendKeys("9295337556");
     }
+
     public void clickOnContinuePaymentButton(){
         continueTopaymentlocator.click();
+    }
+
+    public void clickOnCardNumberBox(){
+        paymentLocator.sendKeys("378282246310005");
     }
 
 }

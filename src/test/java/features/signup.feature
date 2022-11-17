@@ -1,7 +1,7 @@
 Feature: Create new account
   Background:
     Given i am in best buy Home page
-  @Test
+  @Test5
   Scenario: Signup with valid data
 
     And i click on Account

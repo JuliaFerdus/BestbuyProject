@@ -71,7 +71,7 @@ public class signup_stepDef extends Config {
     public void iEnterPassword() {
         String fakePassword = fake.internet().password();
         SP.enterPassword(fakePassword);
-        SP.enterComfpassword(fakePassword);
+        //SP.enterComfpassword(fakePassword);
     }
 
     @And("i enter confirm password")

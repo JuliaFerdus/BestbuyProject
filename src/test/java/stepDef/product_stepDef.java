@@ -32,7 +32,7 @@ public class product_stepDef extends Config {
     }
 
     @And("i click on add to cart button")
-    public void iClickOnAddToCartButton() {
+    public void iClickOnAddToCartButton() throws InterruptedException {
         pp.VerifyClickAdd();
     }
 
@@ -63,20 +63,24 @@ public class product_stepDef extends Config {
 
     @And("i enter valid phone number for order")
     public void iEnterValidPhoneNumberForOrder() {
+
         pp.clickOnPhoneNumberButton();
     }
 
     @When("i click on continue to payment information button")
-    public void iClickOnContinueToPaymentInformationButton() {
+    public void iClickOnContinueToPaymentInformationButton() throws InterruptedException {
         pp.clickOnContinuePaymentButton();
     }
 
     @Then("i should land on payment information page")
+
     public void iShouldLandOnPaymentInformationPage() {
     }
 
     @And("i enter valid credit card number")
-    public void iEnterValidCreditCardNumber() {
+    public void iEnterValidCreditCardNumber() throws InterruptedException {
+        Thread.sleep(300);
+        pp.clickOnCardNumberBox();
     }
 
     @And("i enter valid first name")
