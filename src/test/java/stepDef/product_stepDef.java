@@ -47,8 +47,8 @@ public class product_stepDef extends Config {
     }
 
     @And("i click on checkout button")
-    public void iClickOnCheckoutButton()  {
-       pp.verifyCheckOut();
+    public void iClickOnCheckoutButton() {
+        pp.verifyCheckOut();
     }
 
     @And("i click on continue as guest")
@@ -70,48 +70,5 @@ public class product_stepDef extends Config {
     @When("i click on continue to payment information button")
     public void iClickOnContinueToPaymentInformationButton() throws InterruptedException {
         pp.clickOnContinuePaymentButton();
-    }
-
-    @Then("i should land on payment information page")
-
-    public void iShouldLandOnPaymentInformationPage() {
-    }
-
-    @And("i enter valid credit card number")
-    public void iEnterValidCreditCardNumber() throws InterruptedException {
-        Thread.sleep(300);
-        pp.clickOnCardNumberBox();
-    }
-
-    @And("i enter valid first name")
-    public void iEnterValidFirstName() {
-    }
-
-    @And("i enter valid last name")
-    public void iEnterValidLastName() {
-    }
-
-    @And("i enter valid email in email field")
-    public void iEnterValidEmailInEmailField() {
-    }
-
-    @And("i enter city  name")
-    public void iEnterCityName() {
-    }
-
-    @And("i enter state  name")
-    public void iEnterStateName() {
-    }
-
-    @And("i enter zipcode")
-    public void iEnterZipcode() {
-    }
-
-    @When("i click place your order button")
-    public void iClickPlaceYourOrderButton() {
-    }
-
-    @And("i enter smart watch on search box")
-    public void iEnterSmartWatchOnSearchBox() {
     }
 }

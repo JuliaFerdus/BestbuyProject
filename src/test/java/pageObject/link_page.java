@@ -31,7 +31,7 @@ public class link_page extends Config {
 
     //Function
     public void verificationOfallLinks() {
-     WebElement ulbody = driver.findElement(By.id("section-1"));
+        WebElement ulbody = driver.findElement(By.id("section-1"));
         List<WebElement> link = ulbody.findElements(By.cssSelector("a"));
      System.out.println(link.size());
      for(int i =0; i< link.size();i++){
@@ -40,45 +40,21 @@ public class link_page extends Config {
          String printlinkText= links.get(i).getText();
          System.out.println(printlinkText);
          links.get(i).click();
-         driver.navigate().back();
+         if(driver.getTitle().contains("Product Recalls - Best Buy")){
+             Assert.assertTrue(driver.findElement(By.xpath("//h1[@class='page-title']")).getText().contains("Product Recalls and Safety Alerts"));
+             driver.findElement(By.linkText("www.cpsc.gov/recalls/")).click();
+             System.out.println("Links is click");
+
+             driver.switchTo().defaultContent();
+             driver.navigate().to("https://www.bestbuy.com/");
+         } else {
+
+             driver.navigate().to("https://www.bestbuy.com/");
+
+         }
+
+
      }
 
     }
 }
-   /* WebElement ulbody = driver.findElement(By.cssSelector("div.footer__bottom-section"));
-
-        int link = ulbody.findElements(By.cssSelector("a")).size();
-
-
-        System.out.println(link);
-        for (int i = 0; i < link; i++) {
-            WebElement ulbody2 = driver.findElement(By.cssSelector("div.footer__bottom-section"));
-            List<WebElement> links= ulbody2.findElements(By.cssSelector("a"));
-            String linkText = links.get(i).getText();
-
-            System.out.println(linkText);
-            links.get(i).click();
-
-
-            String actTitle = driver.getTitle();
-            System.out.println(actTitle);
-            Assert.assertTrue(actTitle.contains(linkText));
-            driver.navigate().back();
-
-    int link = ulbody.findElements(By.cssSelector("a")).size();
-
-
-        System.out.println(link);
-                for (int i = 0; i < link; i++) {
-        WebElement ulbody2 = driver.findElement(By.cssSelector("div.footer__bottom-section"));
-        List<WebElement> links= ulbody2.findElements(By.cssSelector("a"));
-        String linkText = links.get(i).getText();
-
-        System.out.println(linkText);
-        links.get(i).click();
-
-
-        String actTitle = driver.getTitle();
-        System.out.println(actTitle);
-        Assert.assertTrue(actTitle.contains(linkText));
-        driver.navigate().back();*/

@@ -69,12 +69,12 @@ public WebElement createAnAccount;
         emailLocator.sendKeys(email);
 
     }
-    public void enterPassword(String passw) {
-        passwordLocator.sendKeys(passw);
+    public void enterPassword() {
+        passwordLocator.sendKeys("Jen!1243");
 
     }
-    public void enterComfpassword(String comfpassw){
-        comfirmPasswordLocator.sendKeys(comfpassw);
+    public void enterComfpassword(){
+        comfirmPasswordLocator.sendKeys("Jen!1243");
     }
     public void enterPhoneNum(String phnum){
       phoneNumLocator.sendKeys(phnum);

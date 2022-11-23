@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -35,17 +34,11 @@ public class product_page extends Config {
     @FindBy(how = How.XPATH, using = "//div[@data-sku-id='6509650']/a[1]/img[1]")
     public WebElement laptopLocator;
 
-    @FindBy(how = How.XPATH, using = "//button[@data-button-state='ADD_TO_CART']")
-    public WebElement addToCartLocator;
-
-
     @FindBy(how = How.LINK_TEXT, using = "Go to Cart")
     public WebElement goToCartLocator;
 
-
     @FindBy(how = How.XPATH, using = "//html/body/div[1]/main/div/div[2]/div[1]/div/div[4]/div[1]/div/div/div/div/button")
     public WebElement cancelPopupLocator;
-
 
     @FindBy(how=How.XPATH, using = "//button[@data-track='Checkout - Top']")
     public WebElement checktOutLocator;
@@ -79,10 +72,12 @@ public class product_page extends Config {
     public void VerifyClickAdd() throws InterruptedException {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-     WebElement clickADD = driver.findElement(By.xpath("//button[@class='c-button c-button-primary c-button-lg c-button-block c-button-icon c-button-icon-leading add-to-cart-button']"));
+     WebElement clickADD = driver.findElement(By.xpath("//button[@data-button-state='ADD_TO_CART']"));
      js.executeScript("arguments[0].scrollIntoView()",clickADD);
-     Thread.sleep(3000);
-     addToCartLocator.click();
+        Thread.sleep(3000);
+        clickADD.click();
+
+
     }
 
 
@@ -110,8 +105,4 @@ public class product_page extends Config {
         continueTopaymentlocator.click();
     }
 
-    public void clickOnCardNumberBox(){
-        paymentLocator.sendKeys("378282246310005");
-    }
-
-}
+   }

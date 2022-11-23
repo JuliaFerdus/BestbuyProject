@@ -16,12 +16,3 @@ Feature: ProductSearch
     And i enter valid email address
     And i enter valid phone number for order
     When i click on continue to payment information button
-    Then i should land on payment information page
-    And i enter valid credit card number
-    And i enter valid first name
-    And i enter valid last name
-    And i enter valid email in email field
-    And i enter city  name
-    And i enter state  name
-    And i enter zipcode
-    When i click place your order button

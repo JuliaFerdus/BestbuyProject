@@ -69,15 +69,13 @@ public class signup_stepDef extends Config {
     @And("i enter password")
 
     public void iEnterPassword() {
-        String fakePassword = fake.internet().password();
-        SP.enterPassword(fakePassword);
-        //SP.enterComfpassword(fakePassword);
+     SP.enterPassword();
     }
 
     @And("i enter confirm password")
     public void iEnterConfirmPassword() {
-//       String fakeConfPass = fake.internet().password();
-//       SP.enterComfpassword(fakeConfPass);
+        SP.enterComfpassword();
+
     }
 
 
