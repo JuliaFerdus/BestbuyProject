@@ -55,8 +55,6 @@ public class product_page extends Config {
     @FindBy(how = How.XPATH,using = "//div[@class='button--continue']/button/span")
     public WebElement continueTopaymentlocator;
 
-    @FindBy(how = How.XPATH,using = "//input[@name='number']")
-    public WebElement paymentLocator;
 
 
     public void searchIcon() {

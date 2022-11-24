@@ -70,11 +70,11 @@ public WebElement createAnAccount;
 
     }
     public void enterPassword() {
-        passwordLocator.sendKeys("Jen!1243");
+        passwordLocator.sendKeys("Jen!1243jen");
 
     }
     public void enterComfpassword(){
-        comfirmPasswordLocator.sendKeys("Jen!1243");
+        comfirmPasswordLocator.sendKeys("Jen!1243jen");
     }
     public void enterPhoneNum(String phnum){
       phoneNumLocator.sendKeys(phnum);
