@@ -26,6 +26,8 @@ public class signin_page extends Config {
 
     @FindBy(how = How.XPATH, using ="//input[@id='lastName']")
     public WebElement lastNameLocator;
+    @FindBy(how = How.XPATH,using = "//*[@id='lastName-text']/p")
+    public WebElement lastNameInvalidLocator;
 
     @FindBy(how = How.CSS, using =" input[id='email']")
     public WebElement emailLocator;
@@ -41,12 +43,9 @@ public class signin_page extends Config {
 
     @FindBy(how = How.CSS, using ="input[name='isRecoveryPhone']")
     public WebElement checkBoxLocator;
-//
-//    @FindBy(how = How.CSS, using ="button[type='submit']")
-//    public WebElement createAnLocator;
 
-@FindBy(how = How.XPATH, using ="//button[@data-track='Create Account']")
-public WebElement createAnAccount;
+    @FindBy(how = How.XPATH, using ="//button[@data-track='Create Account']")
+    public WebElement createAnAccount;
 
 
 
@@ -65,6 +64,12 @@ public WebElement createAnAccount;
     public void enterLastName(String lname) {
         lastNameLocator.sendKeys(lname);
     }
+    public void enterInvalidLastName(String error) {
+       String act= lastNameInvalidLocator.getText();
+       String expt= "Please enter your last name.";
+       Assert.assertEquals(expt,act);
+       System.out.println(act);
+    }
     public void enterEmail(String email) {
         emailLocator.sendKeys(email);
 
@@ -73,8 +78,14 @@ public WebElement createAnAccount;
         passwordLocator.sendKeys("Jen!1243jen");
 
     }
+    public void enterPassword1(String pass) {
+        passwordLocator.sendKeys(pass);
+    }
     public void enterComfpassword(){
         comfirmPasswordLocator.sendKeys("Jen!1243jen");
+    }
+    public void enterComfpassword1(String confp){
+        comfirmPasswordLocator.sendKeys(confp);
     }
     public void enterPhoneNum(String phnum){
       phoneNumLocator.sendKeys(phnum);

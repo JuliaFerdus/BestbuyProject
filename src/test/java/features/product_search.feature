@@ -4,6 +4,7 @@ Feature: ProductSearch
   Given i am on best buy home page searching for product
 
     @E2ETest
+        #System dosen't allow me to automate the next page for End-to-End test
   Scenario: User can search a mac laptop and order or purchase
     And i enter mac laptop on search box
     And i click on search icon

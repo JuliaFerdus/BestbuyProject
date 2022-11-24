@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 2,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,24 +11,60 @@
         "steps": [
           {
             "result": {
-              "duration": 21697000,
+              "duration": 8603000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "i am in best buy Home page",
+            "match": {
+              "location": "stepDef.all_links.iAmInBestBuyHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189205000,
               "status": "passed"
             },
             "line": 4,
-            "name": "i am on best buy home page searching for product",
+            "name": "i click on Account",
             "match": {
-              "location": "stepDef.product_stepDef.iAmOnBestBuyHomePageSearchingForProduct()"
+              "location": "stepDef.signup_stepDef.iClickOnAccount()"
             },
-            "keyword": "Given "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3082652000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i click on create account",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnCreateAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181123000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i click on create on account button",
+            "match": {
+              "location": "stepDef.signup_stepDef.iClickOnCreateOnAccountButton()"
+            },
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2022-11-23T22:19:40.303Z",
+        "start_timestamp": "2022-11-24T17:57:33.188Z",
         "before": [
           {
             "result": {
-              "duration": 13123620000,
+              "duration": 12635491000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +72,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "User can search a mac laptop and order or purchase",
+        "line": 32,
+        "name": "Create a new account without last name using scenario outline to Best buy",
         "description": "",
-        "id": "productsearch;user-can-search-a-mac-laptop-and-order-or-purchase",
+        "id": "create-new-account;create-a-new-account-without-last-name-using-scenario-outline-to-best-buy;;2",
         "after": [
           {
             "result": {
-              "duration": 1291000,
+              "duration": 1305000,
               "status": "passed"
             },
             "match": {
@@ -52,153 +88,147 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 243681000,
+              "duration": 116420000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "i enter mac laptop on search box",
+            "line": 22,
+            "name": "i enter valid firstname \"jeny\" during signup",
             "match": {
-              "location": "stepDef.product_stepDef.iEnterMaclaptopOnSearchBox()"
+              "arguments": [
+                {
+                  "val": "\"jeny\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iEnterValidFirstnameDuringSignup(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6944882000,
+              "duration": 542710000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "i click on search icon",
+            "line": 23,
+            "name": "i enter lastname \"\" during signup",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnSearchIcon()"
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iEnterDuringSignup(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9558880000,
+              "duration": 179576000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "i click on the first mac laptop link",
+            "line": 24,
+            "name": "i enter valid emai \"tom@gmail.com\" during signup",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnTheFirstMacLaptopLink()"
+              "arguments": [
+                {
+                  "val": "\"tom@gmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iEnterValidEmaiDuringSignup(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3356108000,
+              "duration": 131240000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "i click on add to cart button",
+            "line": 25,
+            "name": "i enter valid password \"Jen1234@12tom\" during signup",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnAddToCartButton()"
+              "arguments": [
+                {
+                  "val": "\"Jen1234@12tom\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iEnterValidDuringSignup(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6589086000,
+              "duration": 100130000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "from the pop up window i click go to cart button",
+            "line": 26,
+            "name": "i enter confirmpassword \"Jen1234@12tom\" during signup",
             "match": {
-              "location": "stepDef.product_stepDef.fromThePopUpWindowIClickGoToCartButton()"
+              "arguments": [
+                {
+                  "val": "\"Jen1234@12tom\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iEnterConfirmpasswordDuringSignup(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 760660000,
+              "duration": 124015000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "cancel the next pop up window",
+            "line": 27,
+            "name": "i enter valid \"9296657662\" number",
             "match": {
-              "location": "stepDef.product_stepDef.cancelTheNextPopUpWindow()"
+              "arguments": [
+                {
+                  "val": "\"9296657662\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iEnterValidNumber(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 763232000,
+              "duration": 29241000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "i click on checkout button",
+            "line": 28,
+            "name": "i should see the following \"Please enter your last name.\" message",
             "match": {
-              "location": "stepDef.product_stepDef.iClickOnCheckoutButton()"
+              "arguments": [
+                {
+                  "val": "\"Please enter your last name.\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.signup_stepDef.iShouldSeeTheFollowingMessage(java.lang.String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5336853000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "i click on continue as guest",
-            "match": {
-              "location": "stepDef.product_stepDef.iClickOnContinueAsGuest()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4980003000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "i enter valid email address",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterValidEmailAddress()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 638860000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "i enter valid phone number for order",
-            "match": {
-              "location": "stepDef.product_stepDef.iEnterValidPhoneNumberForOrder()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 148444000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "i click on continue to payment information button",
-            "match": {
-              "location": "stepDef.product_stepDef.iClickOnContinueToPaymentInformationButton()"
-            },
-            "keyword": "When "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@E2ETest"
+            "name": "@signup1"
           }
         ]
       }
     ],
-    "name": "ProductSearch",
+    "name": "Create new account",
     "description": "",
-    "id": "productsearch",
+    "id": "create-new-account",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/product_search.feature",
+    "uri": "file:src/test/java/features/signup.feature",
     "tags": []
   }
 ]
